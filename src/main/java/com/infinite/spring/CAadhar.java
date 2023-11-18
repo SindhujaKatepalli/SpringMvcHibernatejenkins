@@ -21,6 +21,7 @@ public class CAadhar {
 	@Autowired(required=true)
 	@Qualifier(value="iaadhar")
 	public void setIaadhar(IAaadharService iaadhar) {
+		
 		this.iaadhar = iaadhar;
 	}
 	@RequestMapping(value="/aadhar",method=RequestMethod.POST)
